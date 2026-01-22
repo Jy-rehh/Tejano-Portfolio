@@ -307,14 +307,35 @@ h3 {
   .hero-section .text h2 {
     font-size: 35px;
   }
+}
+
+@media (max-width: 768px) {
+  .left a {
+    display: block;
+    line-height: 1.2;
+  }
 
   .links {
+    display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    gap: 6px;
+
+    max-width: 80%; /* KEY: prevents weird stacking */
+  }
+
+  .links a {
+    white-space: nowrap; /* keeps button text in one line */
   }
 }
 
+
 @media (max-width: 740px) {
+
+  .left a {
+    display: block;
+    line-height: 1.2;
+  }
 
   /* SECTION 1: Hero */
   .hero-section {
@@ -345,23 +366,11 @@ h3 {
   }
 }
 
-@media (max-width: 768px) {
-  .links {
-    flex-wrap: wrap;
-    justify-content: flex-end;
-  }
-}
-
 @media (max-width: 600px) {
 
   /* NAVBAR */
   nav {
     padding: 0 20px;
-  }
-
-  .links {
-    flex-wrap: wrap;
-    justify-content: flex-end;
   }
 
   /* SECTION 1: Hero */
