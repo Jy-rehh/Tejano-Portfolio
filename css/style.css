@@ -364,7 +364,7 @@ h3 {
   }
 
   .links {
-    display: inline-block;
+    display: auto;
     flex-wrap: wrap;
     justify-content: flex-end;
     gap: 6px;
