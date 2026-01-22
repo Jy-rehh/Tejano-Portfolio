@@ -46,8 +46,9 @@ nav {
 }
 
 nav .left a {
+  margin-top: 10px;
   color: var(--text-color);
-  font-size: 28px;
+  font-size: 22px;
 
   font-weight: 600;
 }
