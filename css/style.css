@@ -226,7 +226,8 @@ h3 {
 
 .right {
   margin-top: 100px;
-  display: fixed;justify-content: space-between;
+  display: fixed;
+  justify-content: space-between;
   text-align: center;
   padding: 0 16px;
 }
@@ -306,6 +307,7 @@ h3 {
   .hero-section .text h2 {
     font-size: 35px;
   }
+
   .links {
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -343,12 +345,20 @@ h3 {
   }
 }
 
+@media (max-width: 768px) {
+  .links {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+}
+
 @media (max-width: 600px) {
 
   /* NAVBAR */
   nav {
     padding: 0 20px;
   }
+
   .links {
     flex-wrap: wrap;
     justify-content: flex-end;
