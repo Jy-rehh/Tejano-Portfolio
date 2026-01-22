@@ -306,6 +306,10 @@ h3 {
   .hero-section .text h2 {
     font-size: 35px;
   }
+  .links {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
 }
 
 @media (max-width: 740px) {
@@ -344,6 +348,10 @@ h3 {
   /* NAVBAR */
   nav {
     padding: 0 20px;
+  }
+  .links {
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 
   /* SECTION 1: Hero */
