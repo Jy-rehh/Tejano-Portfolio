@@ -2,7 +2,7 @@
   --text-color: #1a1c20;
   --link-color: #000000;
   --background-color: #eeeff1;
-  --nav-height: 70px;
+  --nav-height: 100px;
 }
 
 * {
@@ -36,7 +36,7 @@ nav {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: #ffffff; 
+  background-color: #ffffff;
 
   display: flex;
   justify-content: space-between;
@@ -47,7 +47,8 @@ nav {
 
 nav .left a {
   color: var(--text-color);
-  font-size: 22px;
+  font-size: 28px;
+
   font-weight: 600;
 }
 
@@ -66,7 +67,7 @@ section {
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
-  margin: 50px 0;
+  margin: 90px 0;
   margin-bottom: 100px;
   gap: 40px;
 }
@@ -80,7 +81,8 @@ section {
 }
 
 .links {
-  margin-top: 10px;
+  display: flex;
+  gap: 8px;
 }
 
 .links a {
@@ -89,13 +91,17 @@ section {
   border: 2px solid var(--link-color);
   border-radius: 5px;
   margin-right: 10px;
-  margin-bottom: 10px;
-  transition: .1s;
+  margin-left: 15px;
+  margin-bottom: 1px;
+  transition: .5s;
 }
 
 .links a:hover {
-  color: var(--text-color);
-  border: 2px solid var(--text-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  background-color: var(--link-color);
+  color: #fff;
+  border-color: var(--link-color);
 }
 
 .hero-section .headshot {
@@ -105,6 +111,7 @@ section {
 }
 
 .hero-section .headshot img {
+  margin-top: 20px;
   width: 350px;
   border-radius: 50%;
 }
@@ -112,7 +119,7 @@ section {
 /* SECTION 2: Skills */
 .skills-section {
   padding: 0 50px;
-  margin-bottom: 100px;
+  margin-bottom: 120px;
 }
 
 .skills-section h2 {
@@ -155,10 +162,11 @@ section {
   font-size: 18px;
 }
 
-h3{
+h3 {
   text-align: center;
 
 }
+
 .skills-title {
   margin: 50px 0 1px;
   font-size: 1.4rem;
@@ -170,6 +178,7 @@ h3{
 .project-section {
   padding: 0 50px;
   margin-bottom: 100px;
+  align-items: center;
 }
 
 .project-section h2 {
@@ -192,10 +201,11 @@ h3{
   width: 300px;
   aspect-ratio: 4 / 2;
   object-fit: cover;
-  margin-bottom: 10px;
+  margin-bottom: 1px;
 }
 
 .project-section .group .project-details p {
+  margin-bottom: 20px;
   font-weight: 600;
 }
 
@@ -211,26 +221,37 @@ h3{
 .contact-section {
   padding: 0 50px;
   margin-bottom: 100px;
+  text-align: center;
 }
 
-.right{
+.right {
   margin-top: 100px;
+  display: fixed;justify-content: space-between;
+  text-align: center;
+  padding: 0 16px;
 }
 
 .right a {
   color: var(--text-color);
   margin: 0 10px;
-}
-
-.right a:last-child {
-  color: var(--background-color);
-  background-color: var(--text-color);
   padding: 5px 15px;
   border-radius: 5px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  transition: .3s;
 }
 
 .right a span {
   margin-left: 5px;
+}
+
+.right a:hover {
+  background-color: var(--link-color);
+  color: #ffffff;
+  border-color: var(--link-color);
 }
 
 .contact-section h2 {
@@ -280,6 +301,7 @@ h3{
 }
 
 @media (max-width: 850px) {
+
   /* SECTION 1: Hero */
   .hero-section .text h2 {
     font-size: 35px;
@@ -287,9 +309,15 @@ h3{
 }
 
 @media (max-width: 740px) {
+
   /* SECTION 1: Hero */
   .hero-section {
     flex-direction: column-reverse;
+  }
+
+  .links {
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 
   .hero-section .headshot img {
@@ -312,6 +340,7 @@ h3{
 }
 
 @media (max-width: 600px) {
+
   /* NAVBAR */
   nav {
     padding: 0 20px;
@@ -357,9 +386,9 @@ h3{
 }
 
 footer {
-    text-align: center;
-    top: 0;
-    padding: 20px;
-    font-size: 14px;
-    color: #000000;
+  text-align: center;
+  top: 0;
+  padding: 20px;
+  font-size: 14px;
+  color: #000000;
 }
