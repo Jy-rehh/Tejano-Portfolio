@@ -318,31 +318,6 @@ h3 {
   }
 }
 
-@media (max-width: 768px) {
-  nav {
-    align-items: flex-start;
-  }
-
-  .left a {
-    display: block;
-    line-height: 1.2;
-  }
-
-  .links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    gap: 6px;
-
-    max-width: 55%;   /* ⭐ THIS fixes the layout */
-  }
-
-  .links a {
-    white-space: nowrap;
-  }
-}
-
-
 
 @media (max-width: 740px) {
 
@@ -380,6 +355,25 @@ h3 {
   /* NAVBAR */
   nav {
     padding: 0 20px;
+    align-items: flex-start;
+  }
+
+  .left a {
+    display: block;
+    line-height: 1.2;
+  }
+
+  .links {
+    display:inline-flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 6px;
+
+    max-width: 55%;   /* ⭐ THIS fixes the layout */
+  }
+
+  .links a {
+    white-space: nowrap;
   }
 
   /* SECTION 1: Hero */
