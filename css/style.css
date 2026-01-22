@@ -364,12 +364,12 @@ h3 {
   }
 
   .links {
-    display: block;
+    display: inline-block;
     flex-wrap: wrap;
     justify-content: flex-end;
     gap: 6px;
 
-    max-width: 55%;   /* ⭐ THIS fixes the layout */
+    max-width: 55%;
   }
 
   .links a {
