@@ -372,6 +372,14 @@ h3 {
   nav {
     padding: 0 20px;
   }
+   .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 6px;
+
+    max-width: 80%; /* KEY: prevents weird stacking */
+  }
 
   /* SECTION 1: Hero */
   .hero-section {
